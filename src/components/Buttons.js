@@ -7,7 +7,6 @@ import colors from '../utils/colors';
 class Buttons extends Component {
   
   operatorSelected = operation => {
-    //console.log(operation)
     this.props.operation(operation)
   }
 
@@ -40,7 +39,7 @@ class Buttons extends Component {
   }
 }
 
-const styles = new StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
     flex: 3,
     flexDirection: 'row',

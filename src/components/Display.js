@@ -10,16 +10,18 @@ const Display = ({ state }) => (
         adjustsFontSizeToFit
         numberOfLines={1}
       >{state.display}</Text>
-      <Text
-        style={styles.result}
-        adjustsFontSizeToFit
-        numberOfLines={1}
-      >{state.result}</Text>
+      { state.result !== '' &&
+        <Text
+          style={styles.result}
+          adjustsFontSizeToFit
+          numberOfLines={1}
+        >{state.result}</Text>
+      }
     </SafeAreaView>
   </View>
 )
 
-const styles = new StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
     backgroundColor: colors.dark,
     flex: 1,

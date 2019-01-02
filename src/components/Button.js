@@ -24,7 +24,7 @@ class Button extends Component {
   }
 }
 
-const styles = new StyleSheet.create({
+const styles = StyleSheet.create({
   container:{
     flex: 1,
     justifyContent: 'center',
